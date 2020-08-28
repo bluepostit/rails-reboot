@@ -38,6 +38,11 @@ class RestaurantsController < ApplicationController
     redirect_to restaurants_path
   end
 
+  def top
+    # Ideally get the top-rated restaurants and set them to @restaurants.
+    @restaurants = Restaurant.all
+  end
+
   private
 
   def restaurant_params

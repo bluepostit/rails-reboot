@@ -2,4 +2,8 @@
 
 <p>A lovely restaurant at <em><%= @restaurant.address %></em></p>
 
-<%= link_to 'Back', restaurants_path %>
+<p>
+<%= link_to "Review #{@restaurant.name}", new_restaurant_review_path(@restaurant) %>
+</p>
+<p><%= link_to 'Back', restaurants_path %></p>
+
